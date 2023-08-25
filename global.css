@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Jost";
+    src: url("fonts/Jost.ttf");
+}
+
+:root {
+    font-size: 16px;
+    --dark: rgb(73, 73, 73);
+    --pr: rgb(6, 241, 45);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+body {
+    position: relative;
+    font-family: "Jost", sans-serif;
+    background: linear-gradient(var(--dark), black);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
