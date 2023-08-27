@@ -10,20 +10,18 @@
 
 <header>
     <h1>
-        <div class="logo">
-            <span class="eco">
-                Eco
-            </span>
-            <span>
-                Joystick
-            </span>
-
-            <div style="background-image: url('joystick.jpg');" class="joystick"></div>
-        </div>
-
-        <!-- <div class="slogan">
-            Game Servers
-        </div> -->
+        <a href="/">
+            <div class="logo">
+                <span class="eco">
+                    Eco
+                </span>
+                <span>
+                    Joystick
+                </span>
+    
+                <div style="background-image: url('joystick.jpg');" class="joystick"></div>
+            </div>
+        </a>
     </h1>
 
     <nav>
@@ -35,7 +33,7 @@
 
         <ul class="{isOpen ? "open" : ""}">
             <li>
-                <a href="#">
+                <a class="nav-link" href="#">
                     <span>
                         Services
                     </span>
@@ -44,7 +42,7 @@
             </li>
 
             <li>
-                <a href="#">
+                <a class="nav-link"  href="#">
                     <span>
                         Our Guarantee
                     </span>
@@ -53,7 +51,7 @@
             </li>
 
             <li>
-                <a href="#">
+                <a class="nav-link"  href="#">
                     <span>
                         FAQ
                     </span>
@@ -62,7 +60,7 @@
             </li>
 
             <li>
-                <a href="#">
+                <a class="nav-link"  href="#">
                     <span>
                         Contact
                     </span>
@@ -168,7 +166,7 @@
 
 
         /* mobile link styling */
-        a::before {
+        .nav-link::before {
             display: none;
         }
     }
@@ -203,6 +201,7 @@
     }
 
     .logo {
+        color: white;
         display: flex;
         align-items: center;
         font-weight: normal;
@@ -261,7 +260,7 @@
 
 
     /* link styling */
-    a {
+    .nav-link {
         position: relative;
         color: rgba(255, 255, 255, 0.747);
         text-transform: uppercase;
@@ -276,12 +275,12 @@
         overflow: hidden;
     }
 
-    a span:first-child {
+    .nav-link span:first-child {
         position: relative;
         z-index: 2;
     }
 
-    a::before {
+    .nav-link::before {
         position: absolute;
         content: '';
         background: rgb(255, 255, 255);
@@ -304,17 +303,17 @@
         border-radius: 1em;
     }
 
-    a:hover {
+    .nav-link:hover {
         color: black;
         /* box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15), 0 3px 0 black;
         transform: scale(1.1); */
     }
 
-    a:hover .green {
+    .nav-link:hover .green {
         width: 100%;
     }
 
-    a:hover::before {
+    .nav-link:hover::before {
         left: 150%;
         transition: left .3s linear .2s;
     }

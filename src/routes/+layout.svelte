@@ -1,16 +1,19 @@
 <script>
-    import Header from "../lib/components/global/Header.svelte";
+    import Footer from "../lib/components/global/Footer.svelte";
+import Header from "../lib/components/global/Header.svelte";
 
 </script>
 
 
 <div style="background-image: url('poygon.jpg')" class="bg"></div>
 
-<Header></Header>
+<Header />
 
 <main>
     <slot></slot>
 </main>
+
+<Footer />
 
 
 <style>
